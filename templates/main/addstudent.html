@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADD students</title>
+</head>
+<body>
+	<h1> ADD STUDENTS</h1>
+
+	<form method = "post">
+
+    {% csrf_token %}
+	{{studentform}}
+	<button type = "submit">Submit</button>
+</form>
+
+</body>
+</html>

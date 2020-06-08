@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Students List</title>
+</head>
+<body>
+	{% for student in students%}
+ 		<li> 
+ 			<a href = "{% url 'get_detail' student.id %}">
+ 		{{student.name}}</a></li>
+	{% endfor %}
+</body>
+</html>
